@@ -4,9 +4,9 @@ const navbar = document.querySelector(".navbar");
 
 window.addEventListener("scroll", () => {
     const scrollHeight = window.pageYOffset;
-    const navHeight = navbar.getBoundingClientRect().height;
+    // const navHeight = navbar.getBoundingClientRect().height;
 
-    if(scrollHeight > navHeight) {
+    if(scrollHeight > 0 ) {
         navbar.classList.add("fixed-nav");
      
     } else {
@@ -58,6 +58,12 @@ const applyBtns = document.querySelectorAll(".apply-btn"),
      closeFormBtn.addEventListener("click", () => {
       application.classList.remove("application-show"); 
      })
+  // =========================COPYRIGHT DATE=========================
+     const date = document.getElementById("date");
+     date.innerHTML = new Date().getFullYear();
+// =========================ANIMATION ON SCROLL=========================
+AOS.init({
+  offSet:400,
+  duration:1000
+});
 
-const date = document.getElementById("date");
-date.innerHTML = new Date().getFullYear();
