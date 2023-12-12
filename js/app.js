@@ -29,6 +29,25 @@ navBarOverlay.classList.remove("transparentBcg");
 navDOM.classList.remove("showNav"); 
 });
 
+// =========================TABS MISSION VISION=========================
+const btns = document.querySelectorAll(".tab-btn");
+const about = document.querySelector(".about-tab");
+const articles = document.querySelectorAll(".content-text");
+
+about.addEventListener("click", (e) => {
+  const id = e.target.dataset.id;
+  if(id) {
+    btns.forEach( (btn) => {
+      btn.classList.remove("active-tab");
+      e.target.classList.add("active-tab");
+    });
+    articles.forEach( (article) => {
+      article.classList.remove("active-tab");
+    });
+    const element = document.getElementById(id);
+    element.classList.add("active-tab");
+  }
+})
 // =========================ACORDION=========================
 const questions= document.querySelectorAll(".question"); 
 
