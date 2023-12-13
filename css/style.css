@@ -462,7 +462,7 @@ background-color: transparent !important;
             justify-content: center;
             align-items: center;
     height: 15rem;
-    background-image: linear-gradient(to right, #110B79 , #046382);
+    background-color: linear-gradient(to right, #110B79 , #046382);
     margin-bottom: 3.5rem;
 }
 .newletter-container p, .newletter-container h1 {
@@ -547,7 +547,7 @@ background-color: transparent !important;
     width: 70vw;
             align-items: center;
     height: 14rem;
-    background-image:#cad8dd;
+    /* background-image:#cad8dd; */
     margin-bottom: 3.5rem;
 }
 .mentor-text {
@@ -727,6 +727,46 @@ background-color: transparent !important;
 .content-text.active-tab {
     display: block;
 }
+.support {
+    width: 70vw;
+    margin: 5rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+ }
+ .empower, .opportunity {
+    width: 30vw;
+    background-image: linear-gradient(to right, #110B79 , #046382);
+    padding: 1.5rem 1rem;
+ }
+ .empower *, .opportunity * {
+   margin-bottom: 2rem;
+ }
+ .support h2 {
+    color: aliceblue;
+ }
+ .support p {
+    color:rgb(241, 241, 241);
+    /* margin-bottom: 1rem; */
+ }
+.support .supportLinks {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+ .support button {
+    margin: 1rem auto;
+   background-color: aliceblue;
+   padding: .8rem 1.0rem;
+   width: 17rem;
+   outline: none;
+   border: none;
+ }
+ .support button a {
+   font-size: 1.2rem;
+ }
 .career-container {
     width: 80vw;
     display: flex;
@@ -761,80 +801,6 @@ background-color: transparent !important;
     width: 3rem;
 }
 
-.questions {
-    width: 70vw;
-    margin: 0 auto;
-}
-.questions .title{
-   margin:2rem 0 ;
-}
-.questions .title h2{
-   margin-bottom:1rem;
-}
-.section-center .question {
-/* background-color: #EBA3B3; */
-width: 100%;
-padding: 1rem;
-border-radius: 10px;
-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.418);
-margin-bottom: 1.5rem;
-}
-.section-center .question .question-title {
-padding-bottom: 1rem;
-display: flex;
-justify-content: space-between;
-align-items: center;
-}
-.section-center .question .question-text {
-    margin-top: 1rem;
-border-top: 1px solid gray;
-padding-top: 1rem;
-}
-.question-btn {
-    font-size: 1.5rem;
-    background-color: transparent;
-    border-color: transparent;
-    cursor: pointer;
-}
-.question-text {
-    display: none;
-    padding: 1.5rem;
-}
-.question-text * {
-    padding-bottom: .3rem;
-    color: #454545;
-} 
-.question-text i {
-    margin-right: 0.5rem;
-}
-.question-text ul {
-    margin-left: 1.8rem;
-}
-.show-text .question-text {
-    display: block;
-    transition: all .4s step-end;
-}
-.minus-icon {
-    display: none;
-}
-.show-text .minus-icon {
-    display: inline;
-}
-.show-text .plus-icon {
-    display: none;
-}
-.officer {
-    width: 20rem;
-}
-.officer img {
-    width: 100%;
-}
-.certificate-details {
-    display: flex;
-    gap: 1rem;
-    margin: 0 auto;
-    padding-bottom: 3rem;
-}
 
 /* =========================application form======================= */
 .application {
