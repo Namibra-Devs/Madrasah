@@ -66,8 +66,9 @@ font-size: 1.5rem;
 .navbar-links a:hover {
    color: blue;
 }
-.active-link {
-    color: #10488A;
+.active-links {
+    color: blue;
+    text-decoration: double;
 }
 .donate-btn a {
 background-color: #28379B;
@@ -359,7 +360,8 @@ color: #082D57;
     margin: 20px 0;
     height: 20rem;
     border-radius: 7px;
-    background-color: #0A3B7E;
+    /* background-image: linear-gradient(to right, #110B79 , #046382); */
+    background: url(../img/cool-backgroundblue.png);
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
@@ -377,7 +379,8 @@ margin: 0 auto;
 }
 .carousel .card p{
 margin-bottom: 1.5rem;
-color: white;
+color: rgb(0, 0, 0);
+text-align: justify;
 }
 .carousel .owl-dots {
     text-align: center;
