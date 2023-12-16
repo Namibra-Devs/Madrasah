@@ -55,7 +55,7 @@ transform: rotate(180deg);
     padding: 0rem 1rem;
     display: flex;
     align-items: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
     transition: all .3s step-end;
 }
 .logo a {
@@ -179,7 +179,7 @@ body {
 .home_banner_text p {
    text-align: center;
    color: black;
-   font-size: 1.15rem;
+   font-size: 1.75rem;
    margin-bottom: 3rem;
    word-spacing: 3px;
 }
@@ -230,14 +230,12 @@ font-size: 1.2rem;
 .title h1 {
 text-align: center;
 color: #082D57;
+font-size: 1.6rem;
 }
-.title .underline {
-    width: 11rem;
-    margin: 0 auto;
-    height: 3px;
-    margin-bottom: 4rem;
-    background-color: skyblue;
+.title p {
+    font-size: 1.2rem;
 }
+
 .services_container{
     margin: 2rem 0;
     /* display: flex;
@@ -1001,7 +999,7 @@ background-color: transparent !important;
     font-size: 2rem;
  }
  .home_banner_text p {
-    font-size: 1rem;
+    font-size: 1.1rem;
  }
  .home_banner_text a {
     width: 12rem;
