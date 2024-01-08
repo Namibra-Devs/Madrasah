@@ -145,6 +145,7 @@ font-size: 1.6rem;
 .madrasa-banner {
     background-color: #2E7D32;
     padding: 1.5rem 0;
+    width: 98.5vw;
 }
 .banner-container {
     display: flex;
@@ -227,16 +228,18 @@ width: 30rem;
 .service-img {
     width: 35vw;
     min-width: 22rem;
-    height: 30vw;
+    /* height: 30vw; */
     display: flex;
     flex-wrap:wrap ;
 }
-.service-img-1 {
+/* .service-img-1 img {
     display: flex; align-self: self-end;
+    margin-top: -2rem;
 }
-.service-img-2 {
+.service-img-2 img{
     display: flex; align-self: start;
-}
+    margin-top: 2rem;
+} */
 .service-box img {
     width: 10rem;
 }
@@ -864,6 +867,18 @@ width: 15rem;
         width: 32vw;
         min-width: 22rem;
     }
+    .madrasa-banner {
+        width: 98.2vw;
+    }
+    .banner-container {
+        gap: .8rem;
+    }
+    .banner-container a {
+        gap: .4rem;
+    }
+    .banner-container a img {
+       width: 50px;
+    }
     
  }
  @media (max-width:1000px) {
@@ -906,6 +921,34 @@ width: 15rem;
     .owl-dots { 
         top: 85%;
     }
+    .service-img {
+        width: 35vw;
+        min-width: 22rem;
+        /* height: 00vw; */
+        display: flex;
+        flex-wrap:wrap ;
+    }
+    .service-img img {
+        width: 5rem;
+    }
+    .madrasa-banner {
+        width: 98.0vw;
+    }
+    .banner-container {
+        gap: .8rem;
+    }
+    .banner-container a {
+        gap: .4rem;
+    }
+    .banner-container a img {
+       width: 47px;
+    }
+    /* .service-img-1 {
+        display: flex; align-self: normal;
+    }
+    .service-img-2 {
+        display: flex; align-self: normal;
+    } */
   
   }
 
@@ -943,7 +986,15 @@ width: 15rem;
     width: 40vw;
     min-width: 450px;
 }
-
+.logo a span {
+    display: none;
+}
+.logo a img {
+    width: 3.5rem;
+}
+.donate-btn a {
+    padding: .6rem 1.0rem;
+    }
 .home_banner_text {
     width: 75vw;
  }
@@ -989,61 +1040,36 @@ width: 15rem;
     .officer {
         width: 19rem;
     }
-    .question .apply-btn {
-        width: 11rem;
-        font-size: 1rem;
-         padding: 0.90rem;
-        }
+  
         .blog-details-text {
             gap: 1.0rem;
         }
         /* .mentorship-container {
             height: 16rem;
         } */
-        .program {
-            /* position: relative; */
-            width: 95vw;
-        }
-        .program-color-group {
-            /* position: absolute; */
-            right: 0;
-            top: 15rem;
-        }
-        .color3,  .color2,  .color1 {
-            /* background-color: #110B79; */
-            height: 3rem;
-            width: 3rem;
-            /* border-radius: 50% 0 0 50%; */
-        }
-        /* .mentorship-color-group1 .color1, 
-         .mentorship-color-group1 .color3,
-         .mentorship-color-group1 .color2 {
-            height: 3rem;width: 2rem;
-           } */
+      
            .team-member {
             position: relative;
             width: 10rem;
             /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); */
             /* border-radius: 10px; */
         }
-        .home-color1 {
-            width: 2.5rem;height: 3rem;
-            left: -2.6rem;
+       
+        .madrasa-banner {
+            width: 97.0vw;
         }
-        .home-color2 {
-            width: 10rem;height: 3rem;  
+        .banner-container {
+            gap: 3rem;
         }
-        .home-color3 {
-            
-            width: 10rem;height: 3rem;  
-
+        .banner-container a span {
+            display: none;
         }
-        .home-color4 {
-        
-            width: 3rem;height: 10rem; 
-            right: -3rem;
-            top: 0;
+        .banner-container a img {
+           width: 47px;
         }
+        .downLoad-img img {
+            width: 25rem;
+            }
 }
 
 @media (max-width:600px) {
@@ -1073,19 +1099,22 @@ width: 15rem;
         width: 30vw;
         min-width: 350px;
     }
-    .owl-dots {
-        width: 50vw;
-        left: 23%;
+    .logo a img {
+        width: 3.0rem;
     }
-    .owl-dot {
-        margin-left: .4rem;
-    }
+    .donate-btn a {
+        padding: .5rem .9rem;
+        font-size: .8rem;
+        }
     .service-box img {
         width: 20rem;
     }
     .service-text {
-        width: 20rem;
-        min-width: 20rem;
+        width: 18rem;
+        min-width: 18rem;
+    }
+    .service-text-component img {
+        width: 5rem;
     }
     .portfolio-img-1 img {
         width: 20rem;
@@ -1138,9 +1167,27 @@ width: 15rem;
             /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); */
             /* border-radius: 10px; */
         }
-      .banner-img-1, .banner-img-2, .banner-img-3 {
-        display: none;
-      }
+        .madrasa-banner {
+            width: 96.00vw;
+        }
+        .banner-container {
+            gap: 1.7rem;
+        }
+        .banner-container a span {
+            display: none;
+        }
+        .banner-container a img {
+           width: 40px;
+        }
+        .downLoad-img img {
+            width: 20rem;
+            }
+            .service-text {
+                width: 38vw;
+                min-width: 20rem;
+                background-color: #EBEFF6;
+                padding: 1rem;
+            }
  }
  @media (max-width:400px) {
     .toggle {
@@ -1150,12 +1197,23 @@ width: 15rem;
         width: 30vw;
         min-width: 300px;
     }
+    .logo a img {
+        width: 2.5.0rem;
+    }
+    .donate-btn a {
+        padding: .4rem .8rem;
+        font-size: .7rem;
+        }
     .title h1 {
 font-size: 1.1rem;
     }
     .service-text {
-        width: 20rem;
+        width: 18rem;
         min-width: 18rem;
+    }
+    
+    .service-text-component img {
+        width: 5rem;
     }
     .service-text h2 {
         font-size: 1rem;
@@ -1192,7 +1250,21 @@ font-size: 1.1rem;
             .banner-img {
                 display: none;
             }
-
+            .madrasa-banner {
+                width: 98.20vw;
+            }
+            .banner-container {
+                gap: 1.5rem;
+            }
+            .banner-container a span {
+                display: none;
+            }
+            .banner-container a img {
+               width: 40px;
+            }
+            .downLoad-img img {
+                width: 20rem;
+                }
   }
 
   @media (max-width:370px) {
@@ -1206,7 +1278,28 @@ font-size: 1.1rem;
 .banner-img {
     display: none;
 }
-         
+.madrasa-banner {
+    width: 96.00vw;
+}
+.banner-container {
+    gap: 1.7rem;
+}
+.banner-container a span {
+    display: none;
+}
+.banner-container a img {
+   width: 40px;
+}
+.downLoad-img img {
+    width: 20rem;
+    }
+    .service-text {
+        width: 17rem;
+        min-width: 17rem;
+    }
+    .service-text-component img {
+        width: 5rem;
+    }     
    }
   
   
@@ -1237,12 +1330,19 @@ font-size: 1.1rem;
                 width: 30vw;
                 min-width: 15rem;
             }
-            .service-img img,   .expertise-box img, .service-text{
+            .service-img img,   .expertise-box img {
                 /* width: 30vw; */
                 min-width: 15rem;
                 width: 15rem;
             }
             .title p {
                 font-size: .9rem;
+            }
+            .service-text {
+                width: 17rem;
+                min-width: 17rem;
+            }
+            .service-text-component img {
+                width: 5rem;
             }
    }
