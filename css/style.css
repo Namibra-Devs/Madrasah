@@ -820,7 +820,26 @@ width: 15rem;
     width: 3rem;
 }
 
-
+.privacy-area {
+    width: 70vw;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto;
+    row-gap: 2rem;
+}
+.privacy-details {
+    display: grid;
+    row-gap: .7rem;
+}
+.privacy-details p, .privacy-details ol li, .privacy-details h3{
+  font-size: 1.2rem;
+}
+.privacy-details ol {
+    display: grid;
+    gap: .4rem;
+   margin-left: 1rem;
+}
 /* =========================application form======================= */
 .application {
     position: fixed;
