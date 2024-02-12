@@ -77,15 +77,22 @@ color: black;
     color: black;
     /* text-decoration: double; */
 }
-.donate-btn a {
+.donate-btn a, .logout-container a {
 padding: .7rem 1.2rem;
 border-radius: 5px;
 border: 1px solid gold;
 }
-.donate-btn .sign-btn {
-    color: gold;
+
+.logout-container a.username{
+    border: none;
+    color: #000;
+    cursor: pointer;
 }
-.donate-btn .sign-btn:hover {
+.donate-btn .sign-btn, .logout-container .logout-btn {
+    color: gold;
+    cursor: pointer;
+}
+.donate-btn .sign-btn:hover, .logout-container .logout-btn:hover {
     color: #000;
     background-color: gold;
 }

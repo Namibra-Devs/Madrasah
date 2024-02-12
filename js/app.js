@@ -14,40 +14,40 @@ window.addEventListener("scroll", () => {
     }
 })
 //  ======================TOGGLE NAV==========================
-const toggleBtn = document.querySelector(".toggle"),
-      closeCartBtn = document.querySelector(".close-nav"), 
-      navDOM = document.querySelector(".navbar-details"),
-      navBarOverlay = document.querySelector(".navbar-overlay");
+// const toggleBtn = document.querySelector(".toggle"),
+//       closeCartBtn = document.querySelector(".close-nav"), 
+//       navDOM = document.querySelector(".navbar-details"),
+//       navBarOverlay = document.querySelector(".navbar-overlay");
 
-toggleBtn.addEventListener("click", () => {
-    navBarOverlay.classList.add("transparentBcg");
-    navDOM.classList.add("showNav"); 
-  });
+// toggleBtn.addEventListener("click", () => {
+//     navBarOverlay.classList.add("transparentBcg");
+//     navDOM.classList.add("showNav"); 
+//   });
   
-  closeCartBtn.addEventListener("click", () => {
-navBarOverlay.classList.remove("transparentBcg");
-navDOM.classList.remove("showNav"); 
-});
+//   closeCartBtn.addEventListener("click", () => {
+// navBarOverlay.classList.remove("transparentBcg");
+// navDOM.classList.remove("showNav"); 
+// });
 
 // =========================TABS MISSION VISION=========================
-const btns = document.querySelectorAll(".tab-btn");
-const about = document.querySelector(".about-tab");
-const articles = document.querySelectorAll(".content-text");
+// const btns = document.querySelectorAll(".tab-btn");
+// const about = document.querySelector(".about-tab");
+// const articles = document.querySelectorAll(".content-text");
 
-about.addEventListener("click", (e) => {
-  const id = e.target.dataset.id;
-  if(id) {
-    btns.forEach( (btn) => {
-      btn.classList.remove("active-tab");
-      e.target.classList.add("active-tab");
-    });
-    articles.forEach( (article) => {
-      article.classList.remove("active-tab");
-    });
-    const element = document.getElementById(id);
-    element.classList.add("active-tab");
-  }
-})
+// about.addEventListener("click", (e) => {
+//   const id = e.target.dataset.id;
+//   if(id) {
+//     btns.forEach( (btn) => {
+//       btn.classList.remove("active-tab");
+//       e.target.classList.add("active-tab");
+//     });
+//     articles.forEach( (article) => {
+//       article.classList.remove("active-tab");
+//     });
+//     const element = document.getElementById(id);
+//     element.classList.add("active-tab");
+//   }
+// })
 // =========================ACORDION=========================
 const questions= document.querySelectorAll(".question"); 
 
@@ -65,24 +65,24 @@ const btn= question.querySelector(".question-btn");
      });
      });
 // =====================toggle application form===============
-const applyBtns = document.querySelectorAll(".apply-btn"),
-      closeFormBtn = document.querySelector(".close-form"),
-     application = document.querySelector(".application");
+// const applyBtns = document.querySelectorAll(".apply-btn"),
+//       closeFormBtn = document.querySelector(".close-form"),
+//      application = document.querySelector(".application");
 
-     applyBtns.forEach((applyBtn) => {
-      applyBtn.addEventListener("click", () => {
-        application.classList.add("application-show"); 
-      });
-     })
-     closeFormBtn.addEventListener("click", () => {
-      application.classList.remove("application-show"); 
-     })
+//      applyBtns.forEach((applyBtn) => {
+//       applyBtn.addEventListener("click", () => {
+//         application.classList.add("application-show"); 
+//       });
+//      })
+//      closeFormBtn.addEventListener("click", () => {
+//       application.classList.remove("application-show"); 
+//      })
   // =========================COPYRIGHT DATE=========================
-     const date = document.getElementById("date");
-     date.innerHTML = new Date().getFullYear();
+    //  const date = document.getElementById("date");
+    //  date.innerHTML = new Date().getFullYear();
 // =========================ANIMATION ON SCROLL=========================
-AOS.init({
-  offSet:400,
-  duration:1000
-});
+// AOS.init({
+//   offSet:400,
+//   duration:1000
+// });
 
